@@ -7,13 +7,23 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Quest Dev</title>
 </head>
 <body>
-        <form action="quest7.php" method="$_POST">
-        <h3>6. Lista </h3>
-            <h4>Qual será a saída</h4>
+<div class="container">
+<h3>6. Lista </h3>
+<h4>Qual será a saída</h4>
+<div>
+        <?php
+            $nome_imagem = "Quest6.png";
+            $pasta = "img/";
+            $caminho_completo = $pasta . $nome_imagem;
+        ?>
+        <img src="<?php echo $caminho_completo; ?>" alt="Imagem Dinâmica">
+
+        <form action="quest7.php" method="POST">
+
 
         <label>
             <input type="radio" name="questao6" value="quest1"> A) 2
@@ -32,5 +42,6 @@
 
         <p> <input type="submit" value="Proximo"></p>
     </form>
+    </div>
 </body>
 </html>

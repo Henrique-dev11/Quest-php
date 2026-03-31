@@ -7,13 +7,23 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Quest Dev</title>
 </head>
 <body>
-        <form action="quest9.php" method="$_POST">
-        <h3>8. While loop</h3>
-            <h4>Qual será a saída</h4>
+<div class="container">
+<h3>8. While loop</h3>
+<h4>Qual será a saída</h4>
+<div>
+        <?php
+            $nome_imagem = "Quest8.png";
+            $pasta = "img/";
+            $caminho_completo = $pasta . $nome_imagem;
+        ?>
+        <img src="<?php echo $caminho_completo; ?>" alt="Imagem Dinâmica">
+</div>
+        <form action="quest9.php" method="POST">
+
 
         <label>
             <input type="radio" name="questao8" value="quest1"> A) 1 2 3
@@ -32,5 +42,6 @@
 
         <p> <input type="submit" value="Proximo"></p>
     </form>
+    </div>
 </body>
 </html>
